@@ -1,0 +1,55 @@
+/* Diet Plan Styles */
+.diet-plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+    justify-items: center;
+  }
+  
+  /* Container for each card */
+  .diet-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Styling for each diet card */
+  .diet-card {
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+  }
+  
+  .diet-card-img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .diet-card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ff7f50; /* Gym-friendly orange */
+  }
+  
+  .diet-card-description {
+    font-size: 1rem;
+    color: #f1f1f1;
+  }
+  
+  /* Hover effect to enlarge card */
+  .diet-card:hover {
+    transform: scale(1.1);
+  }
+  

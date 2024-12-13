@@ -1,0 +1,94 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@keyframes shine {
+  0% {
+    background-position: -150% center;
+  }
+  50% {
+    background-position: 50% center;
+  }
+  100% {
+    background-position: 150% center;
+  }
+}
+
+.Pos{
+    margin-top: 8rem;
+    margin-left: 10rem;
+    height: 20rem;
+}
+
+.ImagePos{
+    margin-right: -11rem;
+    margin-top:10rem;
+    height: 70rem;
+}
+
+.shimmer-background {
+  background-image: linear-gradient(90deg, #d4af37, #ffd700, #d4af37);
+  background-size: 200% 100%;
+  animation: shimmerSlide 2s linear infinite;
+}
+
+@keyframes shimmerSlide {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.shine-text {
+  font-weight: bold;
+}
+
+body {
+  background-color: black;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.relative.inline-block span {
+  background-image: linear-gradient(to right, #b0c4de 0%, #d3d3d3 50%, #778899 100%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: metallic-shine 3s linear infinite;
+  text-shadow: none;
+}
+
+.justdoit {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(90deg, #d4af37, #ffd700, #d4af37);
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 1s linear infinite; 
+}
+
+@keyframes metallic-shine {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
+
+

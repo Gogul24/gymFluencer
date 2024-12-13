@@ -1,0 +1,24 @@
+@import "flowbite";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Hide scrollbar for the entire page */
+
+  
+  /* For webkit browsers */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  html, body {
+    scrollbar-width: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #features, #diet, #workout, #pricing, #blogs, #contact {
+    position: relative; /* Add this to ensure proper scroll offset calculation */
+  }
